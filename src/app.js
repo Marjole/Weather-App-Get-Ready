@@ -21,6 +21,30 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayFore() {
+  let foreElement = document.querySelector("#fore");
+
+  let foreHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    foreHTML =
+      foreHTML +
+      ` 
+              <div class="col-2">
+                <div class="weather-forecast-date">${day}</div>
+                <p>☁️</p>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperatures-max"> 18° </span>
+                  <span class="weather-forecast-temperatures-min">12°</span>
+                  
+                </div>
+              </div>
+            `;
+  });
+  foreHTML = foreHTML + `</div>`;
+  foreElement.innerHTML = foreHTML;
+}
+
 function showTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -85,3 +109,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showcelsiusTemperature);
 
 search("Lisbon");
+displayFore();
