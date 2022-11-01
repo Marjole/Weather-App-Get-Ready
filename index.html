@@ -16,6 +16,10 @@
     <title>Get Ready</title>
   </head>
   <body>
+    <video autoplay loop muted plays-inline>
+      <source src="images/video.mp4" type="video/mp4" />
+    </video>
+
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
@@ -52,17 +56,17 @@
                   id="icon"
                   class="float-left"
                 />
-                <div class="float-left">
-                  <strong id="temperature"></strong>
-                  <span class="units"> °C</span>
-                </div>
               </div>
             </div>
             <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>Km/h</li>
-              </ul>
+              <div class="float-left">
+                <strong id="temperature" class="degree"></strong>
+                <span class="degrees">°C</span>
+                <ul>
+                  <li>Humidity: <span id="humidity"></span>%</li>
+                  <li>Wind: <span id="wind"></span>Km/h</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="forecast" id="fore">
