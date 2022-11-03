@@ -24,9 +24,7 @@ li {
   text-transform: capitalize;
   bottom: 250px;
 }
-.img {
-  text-align: left;
-}
+
 .weather-app {
   padding: 20px;
   border: 1px solid grey;
@@ -75,12 +73,19 @@ li {
   position: relative;
   bottom: 60px;
   font-size: 50px;
+  left: 50px;
 }
 .degrees {
   position: relative;
   bottom: 60px;
   font-size: 40px;
   text-transform: capitalize;
+  left: 50px;
+}
+.humidity-wind {
+  position: relative;
+  bottom: 50px;
+  left: 50px;
 }
 .container {
   position: relative;
@@ -97,8 +102,4 @@ li {
   left: 0;
   width: 100vw;
   height: 100vh;
-}
-.humidity-wind {
-  position: relative;
-  bottom: 50px;
 }
