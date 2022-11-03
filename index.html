@@ -16,8 +16,8 @@
     <title>Get Ready</title>
   </head>
   <body>
-    <video autoplay loop muted plays-inline>
-      <source src="images/video.mp4" type="video/mp4" />
+    <video class="background-video" autoplay loop muted plays-inline>
+      <source src="./src/images/video.mp4.mp4" type="video/mp4" />
     </video>
 
     <div class="container">
@@ -42,12 +42,12 @@
           </form>
           <h1 id="city"></h1>
 
-          <ul>
+          <ul class="date-condition">
             <li id="date"></li>
             <li id="condition"></li>
           </ul>
           <div class="row">
-            <div class="col-6">
+            <div class="col-3">
               <div class="clearfix weather-temperature">
                 <img
                   src=""
@@ -60,9 +60,9 @@
             </div>
             <div class="col-6">
               <div class="float-left">
-                <strong id="temperature" class="degree"></strong>
+                <span id="temperature" class="degree"></span>
                 <span class="degrees">°C</span>
-                <ul>
+                <ul class="humidity-wind">
                   <li>Humidity: <span id="humidity"></span>%</li>
                   <li>Wind: <span id="wind"></span>Km/h</li>
                 </ul>
